@@ -1,0 +1,83 @@
+.modal
+  position: fixed
+  display: none
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.4)
+  &-dialog
+    margin: auto
+    padding: 40px 45px
+    max-width: 780px
+    width: 95%
+    min-height: 552px
+    background: #fff
+    opacity: 
+    border-radius: 5px
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 45px
+  &__title
+    margin: 0
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+  &-food
+    margin-bottom: 52px
+    &__row
+      display: flex
+      justify-content: space-between
+      padding-bottom: 8px
+      margin-bottom: 15px
+      border-bottom: 1px solid $border-color
+    &__price
+      margin-left: auto
+      margin-right: 47px
+    &__name
+      font-size: 18px
+      line-height: 32px
+    &__price
+      font-size: 20px
+      line-height: 32px
+      font-weight: 700
+    &__counter
+      display: flex
+      align-items: center
+      &__button
+        width: 39px
+        height: 32px
+        background: #FFFFFF
+        border: 1px solid $modal-button-color
+        box-sizing: border-box
+        border-radius: 2px
+        font-size: 14px
+        background-image: 22px
+        color: $modal-button-color
+      &__text
+        font-size: 16px
+        line-height: 24px
+        margin: 0 13px
+  &-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__tag
+      background-color: $tag-color
+      border-radius: 5px
+      padding: 15px 20px
+      color: #fff
+      font-size: 20px
+      font-weight: 700
+      line-height: 23px
+    &__buttons
+      display: flex
+      align-items: center
+.close
+  font-size: 36px
+  border: none
+  background-color: transparent
+.active
+  display: flex
