@@ -1,0 +1,120 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .card
+    &__rating
+      margin-right: 15px
+    &__category, &__price
+      font-size: 14px
+
+@media (max-width: 992px)
+  .container
+    max-width: 750px
+  .promo
+    &-block
+      padding: 50px
+      background-size: 600px
+      background-position: center right -100px
+    &__title
+      font-size: 34px
+    &-text
+      font-size: 20px
+      max-width: 420px
+  .restaurants
+    &__title
+      font-size: 32px
+  .card
+    flex-basis: 48%
+  .footer
+    &__link
+      font-size: 16px
+
+@media (max-width: 768px)
+  .container
+    max-width: 560px
+  .input
+    &__address 
+      max-width: 200px
+  .promo
+    &-block
+      background-size: 640px
+      background-position: center right -200px
+    &__title
+      line-height: 1.4
+      font-size: 28px
+    &-text
+      font-size: 18px
+      max-width: 280px
+  .restaurants
+    &__title
+      font-size: 24px    
+  .card
+    &-info
+      flex-wrap: wrap
+    &__rating
+      flex-basis: 100%
+    &__title
+      font-size: 18px
+  .footer
+    &-nav
+      max-width: 200px
+
+@media (max-width: 578px)
+  .container
+    width: 90%
+  .header
+    &-block
+      flex-wrap: wrap
+    &__logo
+      margin-bottom: 15px
+  .buttons
+      margin-bottom: 15px
+  .input
+    &__address
+      max-width: none
+      order: 5
+      flex: 1
+  .promo
+    &-block
+      background-image: none
+    &__title
+      margin-bottom: 10px
+  .card
+    flex-basis: 85%
+    margin: 0 auto 15px
+  .footer
+    padding: 30px 0
+    &-nav
+      margin-left: 0
+      order: 0
+    &__logo
+      margin-right: 15px
+      order: 1
+  .social
+    &-links
+      order: 2
+
+@media (max-width: 480px)
+  .promo
+    &-block
+     padding: 20px
+  .restaurants
+    &-heading
+      flex-wrap: wrap
+  .footer
+    &-block
+      flex-wrap: wrap
+      flex-direction: column
+      align-items: center
+    &__logo
+      order: 0
+      margin-bottom: 20px
+    &-nav
+      display: flex
+      flex-direction: column
+      margin-right: 0
+      margin-bottom: 20px
+      text-align: center
+    &__link:not(:last-child)
+      margin-right: 0
+      margin-bottom: 8px

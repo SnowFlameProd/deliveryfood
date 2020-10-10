@@ -1,0 +1,78 @@
+.restaurants
+  padding: 56px 0 85px
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 44px
+  &__title
+    margin: 0
+    font-weight: 700
+    font-size: 36px
+    line-height: 42px
+.card
+  flex-basis: 31%
+  background: #FFFFFF
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
+  border-radius: 7px
+  margin-bottom: 30px
+  overflow: hidden
+  &s
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+  &__img
+    width: 384px
+    height: 250px
+    object-fit: cover
+  &-text
+    padding: 20px 23px 35px
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    margin: 0
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+  &__tag
+    background-color: $tag-color
+    color: #fff
+    padding: 1px 8px
+    font-size: 12px
+    font-weight: 400
+    line-height: 20px
+  &-info
+    display: flex
+    flex-wrap: wrap
+  &__rating
+    background: url(../img/restaurants/rating-star.svg) no-repeat left top 7px
+    padding-left: 22px
+    color: $rating-color
+    font-size: 18px
+    line-height: 32px
+    font-weight: 700
+    margin-right: 26px
+  &__price, &__category
+    font-size: 18px
+    font-weight: 400
+    line-height: 32px
+    color: $text-color
+  &__price
+    margin-right: 10px
+    &::after
+      content: ''
+      width: 5px
+      height: 5px
+      background-color: $text-color
+      display: inline-block
+      vertical-align: middle
+      border-radius: 50%
+      margin-left: 10px
+  &__category
+    text-overflow: ellipsis
+    overflow: 
+    white-space: nowrap
+    max-width: 150px
