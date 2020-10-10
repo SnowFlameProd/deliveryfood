@@ -36,9 +36,16 @@ main {
   width: 306px;
   background: url(../img/restaurants/search-icon.svg) no-repeat left 11px center;
   padding: 4px 35px;
+  margin-left: auto;
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 8px 16px;
   background: #FFFFFF;
   border: 1px solid #D9D9D9;
@@ -48,20 +55,31 @@ main {
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
   border-radius: 2px;
   font-size: 16px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .buttons__login {
-  background: url(../img/header/login.svg) no-repeat left 16px center;
   background-color: #1890FF;
   border-color: #1890FF;
   color: #fff;
-  padding-left: 36px;
   margin-right: 10px;
 }
 
 .buttons__shop {
-  background: url(../img/header/shopping-cart.svg) no-repeat left 16px center;
-  padding-left: 36px;
+  color: #595959;
+}
+
+.buttons__icon {
+  margin-right: 6px;
 }
 
 .header {
@@ -78,6 +96,10 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.promo {
+  margin-bottom: 56px;
 }
 
 .promo-block {
@@ -105,16 +127,13 @@ main {
 }
 
 .restaurants {
-  padding: 56px 0 85px;
+  padding-bottom: 85px;
 }
 
 .restaurants-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -126,17 +145,23 @@ main {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
+  margin-right: 30px;
 }
 
 .card {
-  -ms-flex-preferred-size: 31%;
-      flex-basis: 31%;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
   margin-bottom: 30px;
   overflow: hidden;
+  text-decoration: none;
+}
+
+.card:visited {
+  color: #000;
 }
 
 .cards {
@@ -155,7 +180,6 @@ main {
 
 .card__img {
   width: 384px;
-  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -181,6 +205,10 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
+}
+
+.card__title_reg {
+  font-weight: 400;
 }
 
 .card__tag {
@@ -221,6 +249,13 @@ main {
   margin-right: 10px;
 }
 
+.card__price_bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 30px;
+}
+
 .card__price::after {
   content: '';
   width: 5px;
@@ -236,6 +271,28 @@ main {
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 150px;
+}
+
+.card__ingridients {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #8C8C8C;
+}
+
+.card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-buttons__icon {
+  margin-left: 5px;
 }
 
 .footer {
@@ -351,7 +408,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .card__rating {
+  .cards .card__rating {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
