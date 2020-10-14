@@ -39,6 +39,13 @@ main {
   margin-left: auto;
 }
 
+.username {
+  display: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,7 +389,17 @@ main {
   margin-right: 21px;
 }
 
-.modal {
+.modal-cart {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-auth {
   position: fixed;
   display: none;
   left: 0;
@@ -397,9 +414,19 @@ main {
   padding: 40px 45px;
   max-width: 780px;
   width: 95%;
-  min-height: 552px;
   background: #fff;
   border-radius: 5px;
+}
+
+.modal-login {
+  width: auto;
+  position: relative;
+}
+
+.modal-login .modal-footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .modal-header {
@@ -513,10 +540,31 @@ main {
           align-items: center;
 }
 
+.modal-body {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.label-login {
+  display: block;
+  margin: 30px;
+}
+
+.label-login span {
+  width: 80px;
+  display: inline-block;
+}
+
 .close {
   font-size: 36px;
   border: none;
   background-color: transparent;
+}
+
+.close-login {
+  position: absolute;
+  top: 10px;
+  right: 20px;
 }
 
 .active {

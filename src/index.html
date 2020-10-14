@@ -17,6 +17,7 @@
         <a href="index.html" class="logo header__logo"><img src="img/icons/logo.svg" alt="Logo"></a>
         <input type="text" class="input input__address" placeholder="Адрес доставки">
         <div class="buttons">
+          <span class="username"></span>
           <button class="button buttons__primary buttons__login"><img src="img/icons/login.svg" alt="" class="buttons__icon">Войти</button>
           <button id="cart-button" class="button buttons__cart"><img src="img/icons/shopping-cart.svg" alt="" class="buttons__icon">Корзина</button>
           <button class="button buttons__primary buttons__logout"><img src="img/icons/logout.svg" alt="" class="buttons__icon">Выйти</button>
@@ -186,11 +187,11 @@
   </footer>
   <!-- /.footer -->
 
-  <div class="modal">
+  <div class="modal-cart">
     <div class="modal-dialog">
       <div class="modal-header">
         <h3 class="modal__title">Корзина</h3>
-        <button class="close">&times;</button>
+        <button class="close close-cart">&times;</button>
       </div>
 
       <div class="modal-food">
@@ -255,7 +256,34 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
-  <!-- /.modal -->
+
+  <div class="modal-auth">
+		<div class="modal-dialog modal-login">
+			<button class="close close-login">&times;</button>
+			<form id="loginForm">
+				<fieldset class="modal-body">
+					<legend class="modal__title">Авторизация</legend>
+					<label class="label-login">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-login">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button buttons__primary buttons__login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+  
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 </body>
