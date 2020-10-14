@@ -15,12 +15,12 @@ main
   &__address
     height: 40px
     flex: 0.8
-    background: url(../img/header/home.svg) no-repeat left 11px center
+    background: url(../img/icons/home.svg) no-repeat left 11px center
     padding: 8px 35px
   &__search
     height: 34px
     width: 306px
-    background: url(../img/restaurants/search-icon.svg) no-repeat left 11px center
+    background: url(../img/icons/search-icon.svg) no-repeat left 11px center
     padding: 4px 35px
     margin-left: auto
 .button
@@ -34,15 +34,21 @@ main
   border-radius: 2px
   font-size: 16px
   line-height: 24px
+  &:not(:first-child)
+    margin-left: 10px
   &s
     display: flex
     align-items: center
+    &__icon
+      margin-right: 6px
+      height: 15px
     &__primary
       background-color: $button-color
       border-color: $button-color
       color: #fff
-      margin-right: 10px
-    &__secondary
+    &__cart
       color: $footer-text-color
-    &__icon
-      margin-right: 6px
+      display: none
+    &__login
+    &__logout
+      display: none
