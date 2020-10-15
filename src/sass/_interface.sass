@@ -39,6 +39,8 @@ main
   border-radius: 2px
   font-size: 16px
   line-height: 24px
+  &:hover
+    cursor: pointer
   &:not(:first-child)
     margin-left: 10px
   &s
@@ -51,9 +53,13 @@ main
       background-color: $button-color
       border-color: $button-color
       color: #fff
+      &:hover
+        background-color: darken($button-color, 12%)
     &__cart
       color: $footer-text-color
       display: none
+      &:hover
+        background-color: darken(#fff, 12%)
     &__login
     &__logout
       display: none
