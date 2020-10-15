@@ -10,7 +10,9 @@ const loginForm = document.querySelector("#loginForm");
 const loginInput = document.querySelector("#login");
 const restaurantsCards = document.querySelector(".restaurants-cards");
 const menuCards = document.querySelector(".menu-cards");
-
+const restaurants = document.querySelector(".restaurants");
+const menu = document.querySelector(".menu");
+const promo = document.querySelector(".promo");
 
 let login = localStorage.getItem("deliveryFood");
 
@@ -71,8 +73,6 @@ function notAutorized() {
   loginForm.addEventListener("submit", logIn);
 };
 
-console.log(loginInput.value);
-
 function checkAuth() {
   if (login) {
     autorized();
@@ -83,30 +83,31 @@ function checkAuth() {
 
 checkAuth();
 
-// function createCardRestaurant() {
-//   const card = `
-//   <a href="restaurant.html" class="card wow animate__animated animate__fadeInUp">
-//     <img src="img/pizza-plus/preview.jpg" alt="restaurant" class="card__img">
-//     <div class="card-text">
-//       <div class="card-heading">
-//         <h3 class="card__title">Пицца плюс</h3>
-//         <div class="card__tag">50 мин</div>
-//       </div>
-//       <div class="card-info">
-//         <div class="card__rating">4.5</div>
-//         <div class="card__price">От 900 ₽</div>
-//         <div class="card__category">Пицца</div>
-//       </div>
-//     </div>
-//   </a>
-//   `;
+function createCardRestaurant() {
+  const card = `
+  <a class="card wow animate__animated animate__fadeInUp">
+    <img src="img/pizza-plus/preview.jpg" alt="restaurant" class="card__img">
+    <div class="card-text">
+      <div class="card-heading">
+        <h3 class="card__title">Пицца плюс</h3>
+        <div class="card__tag">50 мин</div>
+      </div>
+      <div class="card-info">
+        <div class="card__rating">4.5</div>
+        <div class="card__price">От 900 ₽</div>
+        <div class="card__category">Пицца</div>
+      </div>
+    </div>
+  </a>
+  `;
 
-//   restaurantsCards.insertAdjacentHTML("beforeend", card);
-// };
+  restaurantsCards.insertAdjacentHTML("beforeend", card);
+};
 
-// createCardRestaurant();
-// createCardRestaurant();
-// createCardRestaurant();
+createCardRestaurant();
+createCardRestaurant();
+createCardRestaurant();
+createCardRestaurant();
 
 function createCardGood() {
   const card = document.createElement("div");
@@ -132,17 +133,26 @@ function createCardGood() {
     </div>
   `);
 
-  restaurantsCards.insertAdjacentHTML("beforeend", card);
+  menuCards.insertAdjacentElement("beforeend", card);
 };
 
 function openGoods(event) {
   const target = event.target;
-  const restaurant = target.closest(".restaurants-card");
+  const restaurant = target.closest(".restaurants-cards");
 
   if (restaurant) {
-    createCardGood();
-    createCardGood();
-    createCardGood();
+    if (login) {
+      restaurants.classList.add("hide");
+      promo.classList.add("hide");
+      menu.classList.remove("hide");
+
+      createCardGood();
+      createCardGood();
+      createCardGood();
+      createCardGood();
+    } else {
+      modalLogin.classList.toggle("active");
+    };
   };
 };
 

@@ -110,6 +110,16 @@ main {
   display: none;
 }
 
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
 .header {
   padding: 40px 0;
 }
