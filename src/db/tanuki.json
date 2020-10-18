@@ -4,41 +4,47 @@
     "name": "ФИЛАДЕЛЬФИЯ НИСУАЗ",
     "description": "Угорь, авокадо, сыр, тобико, соус «Нисуаз», кунжут, 6 шт.",
     "price": 455,
-    "image": "img/tanuki/nisuaz.jpg"
+    "image": "img/tanuki/nisuaz.jpg",
+    "delay": "0.1s"
   },
   {
     "id": "tn02",
     "name": "ФИЛАДЕЛЬФИЯ СМОУК",
     "description": "Лосось копченый, курица копченая, омлет, огурец, авокадо, сыр, микс соусов, 6 шт.",
     "price": 455,
-    "image": "img/tanuki/smoke.jpg"
+    "image": "img/tanuki/smoke.jpg",
+    "delay": "0.2s"
   },
   {
     "id": "tn03",
     "name": "ФИЛАДЕЛЬФИЯ ФРЕШ",
     "description": "Лосось, авокадо, огурец, сыр, омлет, тобико, микс соусов",
     "price": 455,
-    "image": "img/tanuki/fresh.jpg"
+    "image": "img/tanuki/fresh.jpg",
+    "delay": "0.3s"
   },
   {
     "id": "tn04",
     "name": "КАЛИФОРНИЯ АЖИ",
     "description": "Лосось, авокадо, краб-микс, сыр, соус «Ажи-маракуйя», тобико, кунжут, 6 шт.",
     "price": 455,
-    "image": "img/tanuki/azhi.jpg"
+    "image": "img/tanuki/azhi.jpg",
+    "delay": "0.4s"
   },
   {
     "id": "tn05",
     "name": "КАЛИФОРНИЯ БЛЭК",
     "description": "Креветка, краб-микс, сыр, тобико, микс соусов, кунжут, 6 шт.",
     "price": 455,
-    "image": "img/tanuki/black.jpg"
+    "image": "img/tanuki/black.jpg",
+    "delay": "0.5s"
   },
   {
     "id": "tn06",
     "name": "ТАНУКИ",
     "description": "Креветка, снежный краб, гуакамоле, сыр, огурец, микс соусов, тобико, кунжут, 6 шт.",
     "price": 649,
-    "image": "img/tanuki/tanuki.jpg"
+    "image": "img/tanuki/tanuki.jpg",
+    "delay": "0.6s"
   }
 ]
