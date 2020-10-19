@@ -9,6 +9,10 @@ main {
   background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin: auto;
